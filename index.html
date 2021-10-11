@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records.css">
@@ -18,18 +17,18 @@
 
 <body>
     <header>
-        <h1 class="header-title">Cadastro de Clientes</h1>
+        <h1 class="header-title">customer registration</h1>
     </header>
     <main>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <button type="button" class="button r mobile" id="register">register customers</button>
         <table id="tableClient" class="records">
             <thead>
                 <tr>
-                    <th>Nome</th>
+                    <th>Name</th>
                     <th>E-mail</th>
-                    <th>Celular</th>
-                    <th>Cidade</th>
-                    <th>Ação</th>
+                    <th>Cell-phone</th>
+                    <th>City</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,26 +38,23 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                    <h2>Novo Cliente</h2>
+                    <h2>New customer</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
+                    <input type="text" id="name" data-index="new" class="modal-field" placeholder="Name"
                         required>
-                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
-                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="customer email" required>
+                    <input type="text" id="cell-phone" class="modal-field" placeholder="customer cell phone" required>
+                    <input type="text" id="city" class="modal-field" placeholder="customer city" required>
                 </form>
                 <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
+                    <button id="save" class="button edi">Save</button>
+                    <button id="cancel" class="button ex">Cancel</button>
                 </footer>
             </div>
         </div>
     </main>
-    <footer>
-        Copyright &copy; Prof. Fernando Leonid
-    </footer>
 </body>
 
 </html>
