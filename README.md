@@ -1,11 +1,12 @@
-# CRUD-Cadastro-Clientes
-Operação de cadastro de clientes
+# CRUD-Customer-registration
+Customer registration operation
 
-Objetivo completo desta operação, é Utilizar as linguagens Css, Javascript e Html para montar um CRUD que faça as quatro operações basicas criação, consulta, atualização e destruição de dados) utilizadas em bases de dados relacionais (RDBMS) fornecidas aos utilizadores do sistema.
+The complete objective of this operation is to use Css, Javascript and Html languages to assemble a CRUD that performs the four basic operations: creation, query, update and destruction of data) used in relational databases (RDBMS) provided to system users.
 
-Para isso ser possível são necessárias as páginas que interagem com o CRUD da forma como o sistema deve reagir, e isso depende do sistema (afinal existem n formas de desenvolvimento, e a que tem tomado mais força ultimamente é o SPA - Single Page Aplication graças a ferramentas como ReactJs ou VueJs), e nesse caso as páginas intermediárias tomam conta.
+For this to be possible, the pages that interact with the CRUD are needed in the way the system should react, and this depends on the system (after all, there are n ways of development, and the one that has gained more strength lately is the SPA - Single Page Application thanks tools like ReactJs or VueJs), and in this case the intermediate pages take over.
 
-Por exemplo, imagine o fluxo de dados numa tela que mostra os usuários de um sistema e você precisa fazer uma interação entre os resultados das Querys do banco nessa página intermediária (tipo algum cálculo mais complexo que deve ser feito antes de chegar na View). logo o fluxo seria: Sistema solicita -> página intermediária seleciona quais páginas do CRUD vão ser usadas -> CRUD lê os dados do banco (n leituras de n tabelas, agrupadas ou não (no projeto foi usado o localsorage) ) -> Dados chegam na página intermediária e são processadas -> dados tratados vão pra camada mais alta (seja direto pra View ou para o control para serem reinseridos na view)
+
+For example, imagine the data flow on a screen that shows the users of a system and you need to make an interaction between the results of the database's Querys on this intermediate page (like some more complex calculation that must be done before reaching the View). so the flow would be: System requests -> intermediate page selects which CRUD pages will be used -> CRUD reads the data from the database (n reads from n tables, grouped or not (in the project, localsorage was used) ) -> Data arrives on the middle page and are processed -> processed data goes to the highest layer (either directly to the View or to the control to be reinserted in the view)
 
 # REACT
 
@@ -23,13 +24,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### vantagens do react
-Todo componente pode ser reutilizado em novas partes de sua aplicação sem precisar ser recriado A aplicação fica bem organizada e escalável, ou seja, de fácil manutenção, mesmo que cresça em complexidade e tamanho O desenvolvimento fica mais rápido e limpo;
-Uma biblioteca gratuita e de código aberto;
-Uma curva de aprendizado direta, simplificando a adoção;
-Um DOM leve que geralmente resulta em desempenho forte;
-A capacidade de criar, reutilizar e combinar componentes no seu código.
+### react advantages
+Every component can be reused in new parts of your application without needing to be recreated The application is well organized and scalable, that is, easy to maintain, even as it grows in complexity and size Development is faster and cleaner;
+A free and open source library;
+A straight-forward learning curve, simplifying adoption;
+A lightweight DOM that generally results in strong performance;
+The ability to create, reuse and combine components in your code.
 
 
-### o Motivo de nao ter usado React nesse codigo
-O principal motivo, mesmo considerando React uma ferramenta muito boa de se utilizar, foi a incapacidade de minha maquina de fazer operar o react, tendo problemas nos pacotes de babel-eslint, node-models e constantes erros no comando npm-start
+### o Reason for not using React in this code
+The main reason, even considering React a very good tool to use, was my machine's inability to run react, having problems with the packages of babel-eslint, node-models and constant errors in the npm-start command
