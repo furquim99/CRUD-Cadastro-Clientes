@@ -32,5 +32,5 @@ A lightweight DOM that generally results in strong performance;
 The ability to create, reuse and combine components in your code.
 
 
-### o Reason for not using React in this code
+###  Reason for not using React in this code
 The main reason, even considering React a very good tool to use, was my machine's inability to run react, having problems with the packages of babel-eslint, node-models and constant errors in the npm-start command
